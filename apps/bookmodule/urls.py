@@ -21,4 +21,7 @@ urlpatterns = [
     path('lab8/task4/', views.task4_view),
     path('lab8/task5/', views.task5_view),
     path('lab8/task7/', views.task7_view),
+
+
+
 ]

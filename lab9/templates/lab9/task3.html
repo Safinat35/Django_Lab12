@@ -1,0 +1,6 @@
+<h2>Oldest Student ID in Each Department</h2>
+<ul>
+    {% for dept in departments %}
+        <li>{{ dept.name }} - Student ID: {{ dept.oldest_student_id }}</li>
+    {% endfor %}
+</ul>

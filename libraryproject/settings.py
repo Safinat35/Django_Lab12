@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'apps.bookmodule',
     'apps.usermodule',
     'apps',
+    'lab9',
     #'apps.bookmodule.apps.BookmoduleConfig', 
 
 ]

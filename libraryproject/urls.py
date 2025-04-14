@@ -26,5 +26,7 @@ urlpatterns = [
     path('', apps.bookmodule.views.index),  
     path('books/', include("apps.bookmodule.urls")), #include urls.py of bookmodule app
     path('users/', include("apps.usermodule.urls")), 
+    path('books/', include('lab9.urls')),
+
 ]
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My App{% endblock %}</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }} | <a href="{% url 'logout' %}">Logout</a></p>
+    {% else %}
+        <p><a href="{% url 'login' %}">Login</a> | <a href="{% url 'register' %}">Register</a></p>
+    {% endif %}
+
+    {% if messages %}
+        {% for message in messages %}
+            <div style="color: green;">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
+    {% block content %}{% endblock %}
+</body>
+</html>

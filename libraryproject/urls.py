@@ -29,6 +29,7 @@ urlpatterns = [
     path('users/', include("apps.usermodule.urls")), 
     path('books/', include('lab9.urls')),
     path('lab11/', include('lab11.urls')),  
+    path('users/', include('usermodule.urls')),
 
 ]
 
